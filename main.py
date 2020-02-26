@@ -49,4 +49,4 @@ def suutiit_zinju():
 
 if __name__ == '__main__':
     # Threaded option to enable multiple instances for multiple user access support
-    app.run(host='0.0.0.0', threaded=True, debug = True port=5000)
+    app.run(host='0.0.0.0', port = 5000, threaded = True, debug = True)
