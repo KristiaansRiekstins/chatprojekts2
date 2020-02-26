@@ -1,8 +1,15 @@
+{% extends "layout.html" %}
+
+{% set aktiva_lapa="contacts" %}
+
+{% block izvelne %}
+    
+
 {% extends "index.html" %}
 
 {% block saturs %}
 
-<h1>⌘ RVT tērzētava</h1>
+<h1>Mans chat</h1>
 <hr />
 
 <div id="chats">
@@ -16,6 +23,10 @@
         <button onClick="suutiZinju();" type="button">Send</button>
     </div>
 </div>
+
+
+{% endblock %}
+
 
 
 {% endblock %}
