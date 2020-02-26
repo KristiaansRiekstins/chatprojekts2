@@ -1,32 +1,25 @@
-{% extends "layout.html" %}
 
-{% set aktiva_lapa="contacts" %}
+    {% extends "index.html" %}
 
-{% block izvelne %}
-    
+    {% block saturs %}
 
-{% extends "index.html" %}
+    <h1>Mans chat</h1>
+    <hr />
 
-{% block saturs %}
-
-<h1>Mans chat</h1>
-<hr />
-
-<div id="chats">
-</div>
-
-<hr />
-
-<div class="box">
-    <div>
-        <input id="zinja" placeholder="Type your message here" type="text">
-        <button onClick="suutiZinju();" type="button">Send</button>
+    <div id="chats">
     </div>
-</div>
+
+    <hr />
+
+    <div class="box">
+        <div>
+            <input id="zinja" placeholder="Type your message here" type="text">
+            <button onClick="suutiZinju();" type="button">Send</button>
+        </div>
+    </div>
 
 
-{% endblock %}
+    {% endblock %}
 
 
 
-{% endblock %}

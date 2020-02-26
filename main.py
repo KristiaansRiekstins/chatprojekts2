@@ -1,11 +1,26 @@
 from flask import Flask, json, jsonify, render_template, request
 
-app = Flask('app')
+app = Flask(__name__)
 
 
 @app.route('/')
 def index_lapa():
-  return render_template('chats.html')
+  return render_template('chats.html', aktiva_lapa ="chats")
+
+
+
+@app.route('/home')
+def home():
+  return render_template("home.html", aktiva_lapa ="home")
+
+@app.route('/about')
+def about():
+  return render_template("about.html", aktiva_lapa ="about")
+
+@app.route('/contacts')
+def contacts():
+  return render_template("contacts.html", aktiva_lapa ="contacts")
+
 
 
 @app.route('/health')
@@ -34,4 +49,4 @@ def suutiit_zinju():
 
 if __name__ == '__main__':
     # Threaded option to enable multiple instances for multiple user access support
-    app.run(threaded=True, port=5000)
+    app.run(host='0.0.0.0', threaded=True, debug = True port=5000)
