@@ -1,25 +1,30 @@
+{% extends "layout.html" %}
 
-    {% extends "index.html" %}
+{% set aktiva_lapa="chats" %}
 
-    {% block saturs %}
+{% block izvelne %}
+    <body onload="lasiChatu();" class="body">
+        <h1>Mans chat</h1>
+        <hr />
+        <div class="box">
+            <div id="chats">
+            </div>
 
-    <h1>Mans chat</h1>
-    <hr />
-
-    <div id="chats">
-    </div>
-
-    <hr />
-
-    <div class="box">
-        <div>
-            <input id="zinja" placeholder="Type your message here" type="text">
-            <button onClick="suutiZinju();" type="button">Send</button>
+        <hr />
         </div>
-    </div>
+            <div>
+                <input id="zinja" placeholder="Type your message here" type="text">
+                <button onClick="suutiZinju();" type="button">Send</button>
+            </div>
+        </div>
+        <script src="{{ url_for('static', filename='chats.js') }}"></script>
+    </body>
+        
+    </html>
+{% endblock %}
 
 
-    {% endblock %}
+
 
 
 
