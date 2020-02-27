@@ -1,7 +1,37 @@
 .box{
-width: 1000px;
-max-height: 100%;
-padding: 10px;
-border: 5px solid gray;
-margin: auto;
+    max-width: 95%;
+    max-height: 100%;
+    padding: 10px;
+    border: 5px solid darkblue;
+    margin: auto;
+}
+
+.active > a{
+    color: green;
+}
+
+.input{
+    margin: auto;
+    color: royalblue;
+    padding: 10px;
+    width: 50%;
+}
+
+.sutitpoga{
+    margin-left: 10px;
+    background: red
+}
+
+.col-2{
+    border: 5px solid darkblue;
+}
+
+.myBtn {
+    background-color: rebeccapurple;
+    font-style: italic;
+    border: 4px groove gold;
+}
+
+.ievade{
+    color: darkblue;
 }

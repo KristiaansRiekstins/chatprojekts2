@@ -4,20 +4,29 @@
 
 {% block izvelne %}
     <body onload="lasiChatu();" class="body">
-        <h1>Mans chat</h1>
-        <hr />
-        <div class="box">
-            <div id="chats">
-            </div>
+        
+        <div class="container">
+            <div class="row">
 
-        <hr />
-        </div>
-            <div>
-                <input id="zinja" placeholder="Type your message here" type="text">
-                <button onClick="suutiZinju();" type="button">Send</button>
+
+                <div class="col-md-2 col-sm-6 col-1" style="background-color:#ffccff">
+
+
+                    <h1>Mans chat</h1>
+                    <hr />
+                    <div class="box">
+                        <div id="chats">
+                        </div>
+                    <hr />
+                        <div class="input">
+                            <input class="ievade"id="zinja" placeholder="Ieraksti ziņu: " type="text">
+                            <button class="btn btn-success myBtn" role="button" onClick="suutiZinju();" type="submit">Send</button>
+                        </div>
+                    </div>
+                    <script src="{{ url_for('static', filename='chats.js') }}"></script>
+                </div>
             </div>
         </div>
-        <script src="{{ url_for('static', filename='chats.js') }}"></script>
     </body>
         
     </html>
