@@ -33,5 +33,19 @@
 }
 
 .ievade{
-    color: darkblue;
+    background-color: pink;
+    width: 80%;
+    border:
+    text coral; 
+}
+
+.peoplebox{
+    text-align: center;
+    max-height: 100%;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rebeccapurple;
+    border: 2px groove gold;
+    padding: 5px 20px 5px 20px;
 }
