@@ -4,48 +4,47 @@
 
 {% block izvelne %}
     <body onload="lasiChatu();" class="body">
-        
-        <div class="container konteineris-s">
-            <div class="row rinda-r">
+        <h1>Mans chat</h1>
+        <hr />
+        <div class="box">
+            <div id="chats">
+            </div>
+        <hr />
+            <div class="input">
+                <input class="ievade"id="zinja" placeholder="Ieraksti ziņu: " type="text">
+                <button class="btn btn-success myBtn" role="button" onClick="suutiZinju();" type="submit">Sūtīt</button>
+            </div>
+            <div class="peoplebox">
+                <div class="row rinda-r">
+                    <div class="col kolona-k" style="background-color:red">
+                        <p>Cilveks 1</p>
+                    </div>
+                    <div class="col kolona-k" style="background-color:red">
+                        <p>Cilveks 2</p>
+                    </div>
+                    <div class="col kolona-k" style="background-color:red">
+                        <p>Cilveks 3</p>
+                    </div>
+                    <div class="col kolona-k" style="background-color:red">
+                        <p>Cilveks 4</p>
+                    </div>
 
-
-                <div class="col-md-2 col-sm-6 col-1" style="background-color:#ffccff">
-
-
-                    <h1>Mans chat</h1>
-                    <hr />
-                    <div class="box">
-                        <div id="chats">
-                        </div>
-                    <hr />
+                <div class="row rinda-r">
+                    <div class="col kolona-k">
                         <div class="input">
-                            <input class="ievade"id="zinja" placeholder="Ieraksti ziņu: " type="text">
-                            <button class="btn btn-success myBtn" role="button" onClick="suutiZinju();" type="submit">Send</button>
-                        </div>
-                        <div class="peoplebox">
-                            <div class="row rinda-r">
-                                <div class="col-md-2 col-sm-6 kolona-k" style="background-color:red">
-                                    <p>Cilveks 1</p>
-
-                                </div>
-                                <div class="col-md-2 col-sm-6 kolona-k" style="background-color:red">
-                                    <p>Cilveks 2</p>
-                                </div>
-                                <div class="col-md-2 col-sm-6 kolona-k" style="background-color:red">
-                                    <p>Cilveks 3</p>
-                                </div>
-                                <div class="col-md-2 col-sm-6 kolona-k" style="background-color:red">
-                                    <p>Cilveks 4</p>
-                                </div>
-                            </div>
+                            <input class="meklesana" placeholder="Meklējiet kontaktus: " type="text">
+                            <button class="btn btn-success myBtn" type="submit">Meklēt</button>
                         </div>
                     </div>
-                    <script src="{{ url_for('static', filename='chats.js') }}"></script>
+                    <div class="col kolona-k">
+                        <a href="#">
+                        <img alt="W3Schools" src="https://pngimg.com/uploads/plus/plus_PNG84.png" width="50px" height="50px">
+                    </div>
                 </div>
             </div>
         </div>
+    <script src="{{ url_for('static', filename='chats.js') }}"></script>
     </body>
-        
     </html>
 {% endblock %}
 

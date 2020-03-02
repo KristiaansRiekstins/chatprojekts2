@@ -7,8 +7,6 @@ app = Flask(__name__)
 def index_lapa():
   return render_template('chats.html', aktiva_lapa ="chats")
 
-
-
 @app.route('/home')
 def home():
   return render_template("home.html", aktiva_lapa ="home")
@@ -21,7 +19,9 @@ def about():
 def contacts():
   return render_template("contacts.html", aktiva_lapa ="contacts")
 
-
+@app.route('/testingarea')
+def testingarea():
+  return render_template("testingarea.html", aktiva_lapa ="testingarea")
 
 @app.route('/health')
 def health_check():
